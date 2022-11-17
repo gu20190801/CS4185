@@ -1,1 +1,5 @@
 flask == 1.1.2
+numpy==1.12
+cv2==4.6.0.66
+import os
+import glob
