@@ -1,8 +1,6 @@
 import os
 import numpy as np
 from flask import Flask, render_template, send_file
-from glob import glob
-from pickle import NONE
 
 count = 0
 app = Flask(__name__, template_folder = 'Template')
