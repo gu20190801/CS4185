@@ -1,3 +1,5 @@
 flask == 1.1.2
-numpy == 1.23.4
+numpy==1.12
 opencv-python==4.6.0.66
+import os
+import glob
