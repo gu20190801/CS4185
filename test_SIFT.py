@@ -14,7 +14,7 @@ def index():
 	image_name = 'horse.jpg'
 	directory = image_name[0:len(image_name)-4]+"/"
 	static = "static/"
-	parent_dir = "C:/Users/s1410/Downloads/2022-Codes-Python/"
+	parent_dir = "2022-Codes-Python/"
 	image_path = parent_dir+image_name
 	static_path = os.path.join(parent_dir, static)
 
@@ -46,7 +46,7 @@ def upload_file():
       return 'file uploaded successfully'
 
 if __name__ == '__main__':
-      app.run(host='127.0.0.1', port=8000)
+      app.run(host='0.0.0.0', port=8000)
 
 
 # Compute pixel-by-pixel difference and return the sum
