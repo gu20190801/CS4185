@@ -1,0 +1,17 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Title</title>
+    <meta name="language" content="en" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+</head>
+<body>
+    {% for imagelist in imagelist %}
+    <img src="{{url_for('static', filename=imagelist)}}" alt="test">
+    {% endfor %}
+    {{count}}
+</body>
+</html>
