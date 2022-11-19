@@ -1,7 +1,7 @@
 from flask import Flask, render_template, send_file
 
 count = 0
-app = Flask(__name__, template_folder = 'Template')
+app = Flask(__name__, template_folder = 'templates')
 database_dir = "image.orig"
 
 
