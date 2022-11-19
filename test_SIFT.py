@@ -14,27 +14,27 @@ def index():
 	image_name = 'horse.jpg'
 	directory = image_name[0:len(image_name)-4]+"/"
 	static = "static/"
-	parent_dir = "2022-Codes-Python/"
-	image_path = parent_dir+image_name
-	static_path = os.path.join(parent_dir, static)
+	#parent_dir = "2022-Codes-Python/"
+	#image_path = parent_dir+image_name
+	#static_path = os.path.join(parent_dir, static)
 
-	isExist = os.path.exists(static_path)
-	if not isExist:
-		os.mkdir(static_path)
+	#isExist = os.path.exists(static_path)
+	#if not isExist:
+		#os.mkdir(static_path)
 
-	path = os.path.join(static_path, directory)
-	isExist = os.path.exists(path)
-	if not isExist:
-		os.mkdir(path)
+	#path = os.path.join(static_path, directory)
+	#isExist = os.path.exists(path)
+	#if not isExist:
+		#os.mkdir(path)
 
-	img = cv.imread(image_name)
+	#img = cv.imread(image_name)
 	
 	global count
-	os.chdir(path)
-	cv.imwrite(str(count)+'.jpg', img)
+	#os.chdir(path)
+	#cv.imwrite(str(count)+'.jpg', img)
 	count+=1
 			
-	imageList = os.listdir(path)
+	imageList = os.listdir(static+directory)
 	imagelist = [directory + image for image in imageList]
 	return render_template("index.html", imagelist=imagelist, count=count)
 	
